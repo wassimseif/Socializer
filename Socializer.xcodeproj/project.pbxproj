@@ -7,9 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579B8AFC43A979860F31A232 /* Pods_Socializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B09D289E8038C240B2F3FF0 /* Pods_Socializer.framework */; };
+		BE1C2AECB9C555B7FF2CA0A0 /* Pods_SocializerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2392361A30FBA7E05CE487F2 /* Pods_SocializerTests.framework */; };
 		CFB04BB01F5E82350053D26B /* Socializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB04BA61F5E82350053D26B /* Socializer.framework */; };
 		CFB04BB51F5E82350053D26B /* SocializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BB41F5E82350053D26B /* SocializerTests.swift */; };
 		CFB04BB71F5E82350053D26B /* Socializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB04BA91F5E82350053D26B /* Socializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB04BC91F5E826C0053D26B /* AskCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC11F5E826C0053D26B /* AskCredentials.swift */; };
+		CFB04BCA1F5E826C0053D26B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC21F5E826C0053D26B /* Helpers.swift */; };
+		CFB04BCB1F5E826C0053D26B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC31F5E826C0053D26B /* KeychainService.swift */; };
+		CFB04BCC1F5E826C0053D26B /* MimeTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */; };
+		CFB04BCD1F5E826C0053D26B /* NetworkStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */; };
+		CFB04BCE1F5E826C0053D26B /* NetworkStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */; };
+		CFB04BCF1F5E826C0053D26B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC71F5E826C0053D26B /* Reachability.swift */; };
+		CFB04BD01F5E826C0053D26B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC81F5E826C0053D26B /* Routable.swift */; };
+		CFB04BD21F5E82700053D26B /* SessionManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */; };
+		CFB04BD71F5E82760053D26B /* BaseRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD31F5E82760053D26B /* BaseRequestParameters.swift */; };
+		CFB04BD81F5E82760053D26B /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD41F5E82760053D26B /* RequestParameters.swift */; };
+		CFB04BD91F5E82760053D26B /* UploadRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */; };
+		CFB04BDA1F5E82760053D26B /* UploadRequestParametersFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */; };
+		CFB04BDC1F5E827F0053D26B /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */; };
+		CFB04BDE1F5E82830053D26B /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDD1F5E82830053D26B /* DataRequest.swift */; };
+		CFB04BE01F5E828A0053D26B /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */; };
+		CFB04BE21F5E828E0053D26B /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BE11F5E828E0053D26B /* JSONResponse.swift */; };
+		CFB04BE41F5E82940053D26B /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BE31F5E82940053D26B /* OAuth.swift */; };
+		CFB04BE61F5E829A0053D26B /* RetryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BE51F5E829A0053D26B /* RetryManager.swift */; };
+		CFB04BE81F5E829F0053D26B /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BE71F5E829F0053D26B /* UploadRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +45,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2392361A30FBA7E05CE487F2 /* Pods_SocializerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocializerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8C47834F2503CDA3333717 /* Pods-SocializerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocializerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocializerTests/Pods-SocializerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1D86FB2034101348764356 /* Pods-Socializer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socializer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Socializer/Pods-Socializer.debug.xcconfig"; sourceTree = "<group>"; };
+		3B09D289E8038C240B2F3FF0 /* Pods_Socializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Socializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFD2A9E5379E97278AA5F00 /* Pods-SocializerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocializerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocializerTests/Pods-SocializerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C26775543E8C3BF21D9B8C78 /* Pods-Socializer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socializer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Socializer/Pods-Socializer.release.xcconfig"; sourceTree = "<group>"; };
 		CFB04BA61F5E82350053D26B /* Socializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Socializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB04BA91F5E82350053D26B /* Socializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Socializer.h; sourceTree = "<group>"; };
 		CFB04BAA1F5E82350053D26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFB04BAF1F5E82350053D26B /* SocializerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocializerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB04BB41F5E82350053D26B /* SocializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocializerTests.swift; sourceTree = "<group>"; };
 		CFB04BB61F5E82350053D26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB04BC11F5E826C0053D26B /* AskCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskCredentials.swift; sourceTree = "<group>"; };
+		CFB04BC21F5E826C0053D26B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CFB04BC31F5E826C0053D26B /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypeHelper.swift; sourceTree = "<group>"; };
+		CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStackDelegate.swift; sourceTree = "<group>"; };
+		CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStackError.swift; sourceTree = "<group>"; };
+		CFB04BC71F5E826C0053D26B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CFB04BC81F5E826C0053D26B /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagerFactory.swift; sourceTree = "<group>"; };
+		CFB04BD31F5E82760053D26B /* BaseRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestParameters.swift; sourceTree = "<group>"; };
+		CFB04BD41F5E82760053D26B /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
+		CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRequestParameters.swift; sourceTree = "<group>"; };
+		CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRequestParametersFile.swift; sourceTree = "<group>"; };
+		CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
+		CFB04BDD1F5E82830053D26B /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		CFB04BE11F5E828E0053D26B /* JSONResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
+		CFB04BE31F5E82940053D26B /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		CFB04BE51F5E829A0053D26B /* RetryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryManager.swift; sourceTree = "<group>"; };
+		CFB04BE71F5E829F0053D26B /* UploadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579B8AFC43A979860F31A232 /* Pods_Socializer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +93,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB04BB01F5E82350053D26B /* Socializer.framework in Frameworks */,
+				BE1C2AECB9C555B7FF2CA0A0 /* Pods_SocializerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44DD6B7E9CBF7FE66AD3F7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B09D289E8038C240B2F3FF0 /* Pods_Socializer.framework */,
+				2392361A30FBA7E05CE487F2 /* Pods_SocializerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C80082748C61F4DE10764CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F1D86FB2034101348764356 /* Pods-Socializer.debug.xcconfig */,
+				C26775543E8C3BF21D9B8C78 /* Pods-Socializer.release.xcconfig */,
+				2E8C47834F2503CDA3333717 /* Pods-SocializerTests.debug.xcconfig */,
+				7BFD2A9E5379E97278AA5F00 /* Pods-SocializerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFB04B9C1F5E82350053D26B = {
 			isa = PBXGroup;
 			children = (
 				CFB04BA81F5E82350053D26B /* Socializer */,
 				CFB04BB31F5E82350053D26B /* SocializerTests */,
 				CFB04BA71F5E82350053D26B /* Products */,
+				C80082748C61F4DE10764CB6 /* Pods */,
+				44DD6B7E9CBF7FE66AD3F7EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +143,7 @@
 		CFB04BA81F5E82350053D26B /* Socializer */ = {
 			isa = PBXGroup;
 			children = (
+				CFB04BC01F5E825E0053D26B /* Source */,
 				CFB04BA91F5E82350053D26B /* Socializer.h */,
 				CFB04BAA1F5E82350053D26B /* Info.plist */,
 			);
@@ -84,6 +157,33 @@
 				CFB04BB61F5E82350053D26B /* Info.plist */,
 			);
 			path = SocializerTests;
+			sourceTree = "<group>";
+		};
+		CFB04BC01F5E825E0053D26B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CFB04BE11F5E828E0053D26B /* JSONResponse.swift */,
+				CFB04BE31F5E82940053D26B /* OAuth.swift */,
+				CFB04BE51F5E829A0053D26B /* RetryManager.swift */,
+				CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */,
+				CFB04BE71F5E829F0053D26B /* UploadRequest.swift */,
+				CFB04BDD1F5E82830053D26B /* DataRequest.swift */,
+				CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */,
+				CFB04BD31F5E82760053D26B /* BaseRequestParameters.swift */,
+				CFB04BD41F5E82760053D26B /* RequestParameters.swift */,
+				CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */,
+				CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */,
+				CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */,
+				CFB04BC11F5E826C0053D26B /* AskCredentials.swift */,
+				CFB04BC21F5E826C0053D26B /* Helpers.swift */,
+				CFB04BC31F5E826C0053D26B /* KeychainService.swift */,
+				CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */,
+				CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */,
+				CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */,
+				CFB04BC71F5E826C0053D26B /* Reachability.swift */,
+				CFB04BC81F5E826C0053D26B /* Routable.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFB04BBA1F5E82350053D26B /* Build configuration list for PBXNativeTarget "Socializer" */;
 			buildPhases = (
+				717A1E2ED2F7D4BA6A5D27B8 /* [CP] Check Pods Manifest.lock */,
 				CFB04BA11F5E82350053D26B /* Sources */,
 				CFB04BA21F5E82350053D26B /* Frameworks */,
 				CFB04BA31F5E82350053D26B /* Headers */,
 				CFB04BA41F5E82350053D26B /* Resources */,
+				4963C90C6113526A1FA991F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFB04BBD1F5E82350053D26B /* Build configuration list for PBXNativeTarget "SocializerTests" */;
 			buildPhases = (
+				BD26D4047BC4F4EFF024608F /* [CP] Check Pods Manifest.lock */,
 				CFB04BAB1F5E82350053D26B /* Sources */,
 				CFB04BAC1F5E82350053D26B /* Frameworks */,
 				CFB04BAD1F5E82350053D26B /* Resources */,
+				B869165D0995A4C610E7B33B /* [CP] Embed Pods Frameworks */,
+				2C1844127F08A96CA916676F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +254,7 @@
 					CFB04BA51F5E82350053D26B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4LQ43Y6TLH;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CFB04BAE1F5E82350053D26B = {
@@ -193,11 +299,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C1844127F08A96CA916676F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocializerTests/Pods-SocializerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4963C90C6113526A1FA991F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Socializer/Pods-Socializer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		717A1E2ED2F7D4BA6A5D27B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Socializer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B869165D0995A4C610E7B33B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocializerTests/Pods-SocializerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocializerTests/Pods-SocializerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD26D4047BC4F4EFF024608F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocializerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFB04BA11F5E82350053D26B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB04BCF1F5E826C0053D26B /* Reachability.swift in Sources */,
+				CFB04BCD1F5E826C0053D26B /* NetworkStackDelegate.swift in Sources */,
+				CFB04BE01F5E828A0053D26B /* ErrorManager.swift in Sources */,
+				CFB04BD91F5E82760053D26B /* UploadRequestParameters.swift in Sources */,
+				CFB04BE81F5E829F0053D26B /* UploadRequest.swift in Sources */,
+				CFB04BC91F5E826C0053D26B /* AskCredentials.swift in Sources */,
+				CFB04BD81F5E82760053D26B /* RequestParameters.swift in Sources */,
+				CFB04BDC1F5E827F0053D26B /* NetworkStack.swift in Sources */,
+				CFB04BDE1F5E82830053D26B /* DataRequest.swift in Sources */,
+				CFB04BCC1F5E826C0053D26B /* MimeTypeHelper.swift in Sources */,
+				CFB04BE41F5E82940053D26B /* OAuth.swift in Sources */,
+				CFB04BD71F5E82760053D26B /* BaseRequestParameters.swift in Sources */,
+				CFB04BCA1F5E826C0053D26B /* Helpers.swift in Sources */,
+				CFB04BCE1F5E826C0053D26B /* NetworkStackError.swift in Sources */,
+				CFB04BD21F5E82700053D26B /* SessionManagerFactory.swift in Sources */,
+				CFB04BDA1F5E82760053D26B /* UploadRequestParametersFile.swift in Sources */,
+				CFB04BE21F5E828E0053D26B /* JSONResponse.swift in Sources */,
+				CFB04BCB1F5E826C0053D26B /* KeychainService.swift in Sources */,
+				CFB04BE61F5E829A0053D26B /* RetryManager.swift in Sources */,
+				CFB04BD01F5E826C0053D26B /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +544,9 @@
 		};
 		CFB04BBB1F5E82350053D26B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1D86FB2034101348764356 /* Pods-Socializer.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
@@ -336,13 +559,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wassimsef.Socializer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CFB04BBC1F5E82350053D26B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26775543E8C3BF21D9B8C78 /* Pods-Socializer.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
@@ -361,7 +587,9 @@
 		};
 		CFB04BBE1F5E82350053D26B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8C47834F2503CDA3333717 /* Pods-SocializerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
 				INFOPLIST_FILE = SocializerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -373,7 +601,9 @@
 		};
 		CFB04BBF1F5E82350053D26B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFD2A9E5379E97278AA5F00 /* Pods-SocializerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
 				INFOPLIST_FILE = SocializerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
