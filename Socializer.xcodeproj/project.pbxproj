@@ -16,8 +16,8 @@
 		CFB04BCA1F5E826C0053D26B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC21F5E826C0053D26B /* Helpers.swift */; };
 		CFB04BCB1F5E826C0053D26B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC31F5E826C0053D26B /* KeychainService.swift */; };
 		CFB04BCC1F5E826C0053D26B /* MimeTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */; };
-		CFB04BCD1F5E826C0053D26B /* NetworkStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */; };
-		CFB04BCE1F5E826C0053D26B /* NetworkStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */; };
+		CFB04BCD1F5E826C0053D26B /* SocializerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC51F5E826C0053D26B /* SocializerDelegate.swift */; };
+		CFB04BCE1F5E826C0053D26B /* SocializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC61F5E826C0053D26B /* SocializerError.swift */; };
 		CFB04BCF1F5E826C0053D26B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC71F5E826C0053D26B /* Reachability.swift */; };
 		CFB04BD01F5E826C0053D26B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BC81F5E826C0053D26B /* Routable.swift */; };
 		CFB04BD21F5E82700053D26B /* SessionManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */; };
@@ -25,7 +25,7 @@
 		CFB04BD81F5E82760053D26B /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD41F5E82760053D26B /* RequestParameters.swift */; };
 		CFB04BD91F5E82760053D26B /* UploadRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */; };
 		CFB04BDA1F5E82760053D26B /* UploadRequestParametersFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */; };
-		CFB04BDC1F5E827F0053D26B /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */; };
+		CFB04BDC1F5E827F0053D26B /* Socializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDB1F5E827F0053D26B /* Socializer.swift */; };
 		CFB04BDE1F5E82830053D26B /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDD1F5E82830053D26B /* DataRequest.swift */; };
 		CFB04BE01F5E828A0053D26B /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */; };
 		CFB04BE21F5E828E0053D26B /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB04BE11F5E828E0053D26B /* JSONResponse.swift */; };
@@ -61,8 +61,8 @@
 		CFB04BC21F5E826C0053D26B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		CFB04BC31F5E826C0053D26B /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypeHelper.swift; sourceTree = "<group>"; };
-		CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStackDelegate.swift; sourceTree = "<group>"; };
-		CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStackError.swift; sourceTree = "<group>"; };
+		CFB04BC51F5E826C0053D26B /* SocializerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocializerDelegate.swift; sourceTree = "<group>"; };
+		CFB04BC61F5E826C0053D26B /* SocializerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocializerError.swift; sourceTree = "<group>"; };
 		CFB04BC71F5E826C0053D26B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		CFB04BC81F5E826C0053D26B /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagerFactory.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		CFB04BD41F5E82760053D26B /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
 		CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRequestParameters.swift; sourceTree = "<group>"; };
 		CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRequestParametersFile.swift; sourceTree = "<group>"; };
-		CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
+		CFB04BDB1F5E827F0053D26B /* Socializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socializer.swift; sourceTree = "<group>"; };
 		CFB04BDD1F5E82830053D26B /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		CFB04BE11F5E828E0053D26B /* JSONResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
@@ -171,9 +171,9 @@
 				CFB04BE11F5E828E0053D26B /* JSONResponse.swift */,
 				CFB04BC31F5E826C0053D26B /* KeychainService.swift */,
 				CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */,
-				CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */,
-				CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */,
-				CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */,
+				CFB04BDB1F5E827F0053D26B /* Socializer.swift */,
+				CFB04BC51F5E826C0053D26B /* SocializerDelegate.swift */,
+				CFB04BC61F5E826C0053D26B /* SocializerError.swift */,
 				CFB04BE31F5E82940053D26B /* OAuth.swift */,
 				CFB04BC71F5E826C0053D26B /* Reachability.swift */,
 				CFB04BD41F5E82760053D26B /* RequestParameters.swift */,
@@ -184,7 +184,6 @@
 				CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */,
 				CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */,
 			);
-			name = Source;
 			path = Source;
 			sourceTree = "<group>";
 		};
@@ -192,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Request Parameters";
 			path = "Request Parameters";
 			sourceTree = "<group>";
 		};
@@ -410,19 +408,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB04BCF1F5E826C0053D26B /* Reachability.swift in Sources */,
-				CFB04BCD1F5E826C0053D26B /* NetworkStackDelegate.swift in Sources */,
+				CFB04BCD1F5E826C0053D26B /* SocializerDelegate.swift in Sources */,
 				CFB04BE01F5E828A0053D26B /* ErrorManager.swift in Sources */,
 				CFB04BD91F5E82760053D26B /* UploadRequestParameters.swift in Sources */,
 				CFB04BE81F5E829F0053D26B /* UploadRequest.swift in Sources */,
 				CFB04BC91F5E826C0053D26B /* AskCredentials.swift in Sources */,
 				CFB04BD81F5E82760053D26B /* RequestParameters.swift in Sources */,
-				CFB04BDC1F5E827F0053D26B /* NetworkStack.swift in Sources */,
+				CFB04BDC1F5E827F0053D26B /* Socializer.swift in Sources */,
 				CFB04BDE1F5E82830053D26B /* DataRequest.swift in Sources */,
 				CFB04BCC1F5E826C0053D26B /* MimeTypeHelper.swift in Sources */,
 				CFB04BE41F5E82940053D26B /* OAuth.swift in Sources */,
 				CFB04BD71F5E82760053D26B /* BaseRequestParameters.swift in Sources */,
 				CFB04BCA1F5E826C0053D26B /* Helpers.swift in Sources */,
-				CFB04BCE1F5E826C0053D26B /* NetworkStackError.swift in Sources */,
+				CFB04BCE1F5E826C0053D26B /* SocializerError.swift in Sources */,
 				CFB04BD21F5E82700053D26B /* SessionManagerFactory.swift in Sources */,
 				CFB04BDA1F5E82760053D26B /* UploadRequestParametersFile.swift in Sources */,
 				CFB04BE21F5E828E0053D26B /* JSONResponse.swift in Sources */,
