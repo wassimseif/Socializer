@@ -11,7 +11,7 @@ import RxSwift
 import Alamofire
 import ObjectMapper
 // MARK: - Data request
-extension NetworkStack {
+extension Socializer {
     
     /// Send a Request expecting Data as a response
     ///

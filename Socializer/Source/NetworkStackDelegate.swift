@@ -1,6 +1,6 @@
 //
-//  NetworkStackDelegate.swift
-//  NetworkStack
+//  SocializerDelegate
+//  Socializer
 //
 //  Created by Wassim on 8/8/17.
 //  Copyright © 2017 Wassim. All rights reserved.
@@ -14,7 +14,7 @@ public protocol ResponseAdaptable {}
 
 extension Result : ResponseAdaptable {}
 
-public class NetworkStackDelegate {
+public class SocializerDelegate {
     
     public var didFailToBuildRequest = PublishRelay<RequestParameters>()
     

@@ -1,5 +1,5 @@
 //
-//  NetworkStackError.swift
+//  SocializerError
 //
 //  Copyright © 2017 Niji. All rights reserved.
 //
@@ -18,7 +18,7 @@
 
 import Foundation
 
-public enum NetworkStackError: Error {
+public enum SocializerError: Error {
     /// No internet, roaming off, data not allowed, call active, …
     case noInternet(error: NSError)
     /// DNS Lookup failed, Host unreachable, …
@@ -38,7 +38,7 @@ public enum NetworkStackError: Error {
     /// Couldn't map the json
     case mappingError(response : HTTPURLResponse, json : Any)
     /// Models the default error from the API
-    case apiResponseError(error : NetworkStackErrorRepresentable?)
+    case apiResponseError(error : SocializerErrorRespresentable?)
     /// Unknown
     case unknown
     

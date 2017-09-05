@@ -3,7 +3,7 @@ import RxSwift
 import Alamofire
 import ObjectMapper
 
-public final class NetworkStack<T : NetworkStackErrorRepresentable> {
+public final class Socializer<T : SocializerErrorRespresentable> {
     // MARK: - Constants
     let authorizationHeaderKey = "Authorization"
     // MARK: - Type aliases
@@ -29,7 +29,7 @@ public final class NetworkStack<T : NetworkStackErrorRepresentable> {
     
     internal var uploadManager: Alamofire.SessionManager?
     
-    public var delegate : NetworkStackDelegate = NetworkStackDelegate()
+    public var delegate : SocializerDelegate = SocializerDelegate()
     
     public var uploadManagerSessionDelegate: Alamofire.SessionDelegate? {
         return uploadManager?.delegate
@@ -50,7 +50,7 @@ public final class NetworkStack<T : NetworkStackErrorRepresentable> {
     
     // MARK: - Setup
     
-    /// Inits the NetworkStack
+    /// Inits the Socializer
     ///
     /// - Parameters:
     ///   - baseURL: the base URL for the webservice
@@ -75,7 +75,7 @@ public final class NetworkStack<T : NetworkStackErrorRepresentable> {
 }
 
 // MARK: - Cancellation
-extension NetworkStack {
+extension Socializer {
     
     /// Disconnects the webservice. cancels all the requests
     ///
@@ -146,7 +146,7 @@ extension NetworkStack {
 }
 
 // MARK: - Request building
-extension NetworkStack {
+extension Socializer {
     
     /// Builds the Alamofire.DataRequest
     ///
@@ -255,7 +255,7 @@ extension NetworkStack {
 }
 
 // MARK: - Request validation
-extension NetworkStack {
+extension Socializer {
     /// Validates the datareqeust's response code
     ///
     /// - Parameter request: old datareqeust
@@ -266,7 +266,7 @@ extension NetworkStack {
 }
 
 // MARK: - Request
-extension NetworkStack {
+extension Socializer {
     
     
     /// sends a request from a request parameters object. DataRequest then sends if using the internal functions
@@ -281,7 +281,7 @@ extension NetworkStack {
                               responseSerializer: T) -> Observable<(HTTPURLResponse, T.SerializedObject)> {
         guard let request = self.buildRequest(requestParameters: requestParameters) else {
             
-            return Observable.error(NetworkStackError.requestBuildFail)
+            return Observable.error(SocializerError.requestBuildFail)
         }
         
         //            return self.sendAuthenticatedRequest(request: request, queue: queue, responseSerializer: responseSerializer)
@@ -319,12 +319,12 @@ extension NetworkStack {
                             if let httpResponse = packedResponse.response {
                                 observer.onNext(httpResponse, result)
                             } else {
-                                observer.onError(NetworkStackError.unknown)
+                                observer.onError(SocializerError.unknown)
                             }
                             observer.onCompleted()
                         case .failure(let error):
-                            let networkStackError = self.webserviceStackError(error: error, httpURLResponse: packedResponse.response, responseData: packedResponse.data)
-                            observer.onError(networkStackError)
+                            let socializerError = self.webserviceStackError(error: error, httpURLResponse: packedResponse.response, responseData: packedResponse.data)
+                            observer.onError(socializerError)
                         }
                 }
                 return Disposables.create {

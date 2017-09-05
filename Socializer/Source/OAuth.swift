@@ -10,7 +10,7 @@ import RxSwift
 import Alamofire
 import ObjectMapper
 // MARK: - OAuth
-extension NetworkStack {
+extension Socializer {
     /// Returns the access token only if available and NOT expired
     ///
     /// - Returns: accesstoken string if available and NOT expired nil otherwise

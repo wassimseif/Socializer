@@ -1,6 +1,6 @@
 //
 //  Helper.swift
-//  NetworkStack
+//  Socializer
 //
 //  Created by Wassim on 5/10/17.
 //  Copyright © 2017 Wassim. All rights reserved.
@@ -8,19 +8,19 @@
 
 import Foundation
 
-/// This file contains function that will only help using NetworkStack, they're completely optional but i decided to add them since people might find them helpful
+/// This file contains function that will only help using Socializer, they're completely optional but i decided to add them since people might find them helpful
 
 
-public extension NetworkStack{
-    public typealias NetworkStackErrorHandlerResponse =  ( errorMessage : String ,   errorCode : Int )
+public extension Socializer{
+    public typealias SocializerErrorHandlerResponse =  ( errorMessage : String ,   errorCode : Int )
     /// Handles the error from the API and try to get something that could be displayed to the user. must be used on the controller level
     ///
-    /// - Parameter error: the error from the networkStack
-    /// - Returns: NetworkStackErrorHandlerResponse
-    public func handlerNetworkStackError(fromError error : Error) -> NetworkStackErrorHandlerResponse {
+    /// - Parameter error: the error from the Socializer
+    /// - Returns: SocializerErrorHandlerResponse
+    public func handleSocializerError(fromError error : Error) -> SocializerErrorHandlerResponse {
         
-        let networkStackError = error as! NetworkStackError
-        switch networkStackError {
+        let socializerError = error as! SocializerError
+        switch socializerError {
         case .badServerResponse(error: _) ,
              .mappingError(response: _ , json: _) ,
              .parseError,

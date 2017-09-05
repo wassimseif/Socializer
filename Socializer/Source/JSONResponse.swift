@@ -11,7 +11,7 @@ import RxSwift
 import Alamofire
 import ObjectMapper
 // MARK: - JSON request
-extension NetworkStack {
+extension Socializer {
     
     /// models a json serializer
     ///
@@ -55,12 +55,12 @@ extension NetworkStack {
                                                       responseSerializer: responseSerializer)
                 .subscribe(onNext: { (response , json) in
                     guard  let jsonDictionary = json as? [String : AnyObject] else {
-                        observer.onError(NetworkStackError.mappingError(response: response, json: json))
+                        observer.onError(SocializerError.mappingError(response: response, json: json))
                         observer.onCompleted()
                         return
                     }
                     guard let objectToEmit = Mapper<T>().map(JSON: jsonDictionary) else {
-                        observer.onError(NetworkStackError.mappingError(response: response, json: json))
+                        observer.onError(SocializerError.mappingError(response: response, json: json))
                         observer.onCompleted()
                         return
                     }
@@ -108,7 +108,7 @@ extension NetworkStack {
                 
                 
                 guard let jsonDictionary = json as? [[String : AnyObject]] else {
-                    observer.onError(NetworkStackError.mappingError(response: response, json: json))
+                    observer.onError(SocializerError.mappingError(response: response, json: json))
                     observer.onCompleted()
                     return
                 }

@@ -12,7 +12,7 @@ import Alamofire
 import ObjectMapper
 // MARK: - Error management
 /// Just to organize what can be considered as an error
-public protocol NetworkStackErrorRepresentable : Error, Mappable  {
+public protocol SocializerErrorRespresentable : Error, Mappable  {
     
     var errorMessage : String { get }
     
@@ -20,7 +20,7 @@ public protocol NetworkStackErrorRepresentable : Error, Mappable  {
     
 }
 
-extension NetworkStack {
+extension Socializer {
     
     /// Handles the errors from the web services
     ///
@@ -28,12 +28,12 @@ extension NetworkStack {
     ///   - error: Error
     ///   - httpURLResponse: the HTTPURLResponse
     ///   - responseData: The raw response from the web service
-    /// - Returns: Network stack error representing the error
+    /// - Returns: Socializer error representing the error
     internal func webserviceStackError(error: Error,
                                        httpURLResponse: HTTPURLResponse?,
-                                       responseData: Data?) -> NetworkStackError {
+                                       responseData: Data?) -> SocializerError {
         
-        let finalError: NetworkStackError
+        let finalError: SocializerError
         
         let nserror = error as NSError
         
@@ -47,21 +47,21 @@ extension NetworkStack {
              NSURLErrorDataNotAllowed,
              NSURLErrorTimedOut:
             
-            finalError = NetworkStackError.noInternet(error: nserror)
+            finalError = SocializerError.noInternet(error: nserror)
             
         case NSURLErrorCannotConnectToHost,
              NSURLErrorCannotFindHost,
              NSURLErrorDNSLookupFailed,
              NSURLErrorRedirectToNonExistentLocation:
             
-            finalError = NetworkStackError.serverUnreachable(error: nserror)
+            finalError = SocializerError.serverUnreachable(error: nserror)
             
         case NSURLErrorBadServerResponse,
              NSURLErrorCannotParseResponse,
              NSURLErrorCannotDecodeContentData,
              NSURLErrorCannotDecodeRawData:
             
-            finalError = NetworkStackError.badServerResponse(error: nserror)
+            finalError = SocializerError.badServerResponse(error: nserror)
             
         default:
             
@@ -99,28 +99,28 @@ extension NetworkStack {
     
     func handlerOtherErrors(withError error : NSError,
                             andHTTPResponseResponse httpURLResponse   : HTTPURLResponse? ,
-                            andResponseData responseData : Data?) ->NetworkStackError{
+                            andResponseData responseData : Data?) ->SocializerError{
         
-        let returnError: NetworkStackError
+        let returnError: SocializerError
         
         guard  let httpURLResponse = httpURLResponse else{
-            return NetworkStackError.unknown
+            return SocializerError.unknown
         }
         
         guard  let json = getJson(fromData: responseData) else {
-            return NetworkStackError.parseError
+            return SocializerError.parseError
             
         }
         //Should try to parse the default error to abstract the error code for the default error
         if let errorObject = tryToParseDefaultError(fromJSON: json) {
-            return NetworkStackError.apiResponseError(error: errorObject)
+            return SocializerError.apiResponseError(error: errorObject)
         }
     
         
         if  400..<600 ~= httpURLResponse.statusCode {
-            returnError = NetworkStackError.http(httpURLResponse: httpURLResponse, data: responseData)
+            returnError = SocializerError.http(httpURLResponse: httpURLResponse, data: responseData)
         } else {
-            returnError = NetworkStackError.otherError(error: error)
+            returnError = SocializerError.otherError(error: error)
         }
         return returnError
     }

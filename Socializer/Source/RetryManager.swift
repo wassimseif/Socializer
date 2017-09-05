@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - Retry management
 
-extension NetworkStack {
+extension Socializer{
 
     internal func askCredentialsIfNeeded(forError error: Error) -> Observable<Void> {
         if self.shouldAskCredentials(forError: error) == true {
@@ -39,7 +39,7 @@ extension NetworkStack {
     
     internal func shouldRenewToken(forError error: Error) -> Bool {
         var shouldRenewToken = false
-        if case NetworkStackError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 {
+        if case SocializerError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 {
             shouldRenewToken = true
         }
         return shouldRenewToken
@@ -47,7 +47,7 @@ extension NetworkStack {
     
     internal func shouldAskCredentials(forError error: Error) -> Bool {
         var shouldAskCredentials = false
-        if case NetworkStackError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 || httpURLResponse.statusCode == 403 {
+        if case SocializerError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 || httpURLResponse.statusCode == 403 {
             shouldAskCredentials = true
         }
         return shouldAskCredentials

@@ -1,6 +1,6 @@
 //
 //  AskCredentials.swift
-//  NetworkStack
+//  Socializer
 //
 //  Created by Wassim on 7/4/17.
 //  Copyright © 2017 Wassim. All rights reserved.
@@ -15,14 +15,14 @@ import RxSwift
  
  # Description
  
- This struct define the behavior when NetworkStack can't find how to provide token for request which need authorization.
+ This struct define the behavior when Socializer can't find how to provide token for request which need authorization.
  
  # Usage
  
  - Use triggerCondition to define for what error you need to call the handler.
  by default 401 error trigger handler.
  
- - Your provided handler must fetch new token and update the NetworkStack with it.
+ - Your provided handler must fetch new token and update the Socializer with it.
  
  */
 public struct AskCredential {
@@ -53,7 +53,7 @@ public struct AskCredential {
     
     private static func defaultTriggerCondition(error: Error) -> Bool {
         var shouldAskCredentials = false
-        if case NetworkStackError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 {
+        if case SocializerError.http(httpURLResponse: let httpURLResponse, data: _) = error, httpURLResponse.statusCode == 401 {
             shouldAskCredentials = true
         }
         return shouldAskCredentials

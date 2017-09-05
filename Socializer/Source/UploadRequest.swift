@@ -12,7 +12,7 @@ import RxSwift
 import Alamofire
 import ObjectMapper
 // MARK: - Upload request
-extension NetworkStack {
+extension Socializer {
     
     /// Sends an upload request
     ///
@@ -30,12 +30,12 @@ extension NetworkStack {
         
         return Observable.create({ (observer) -> Disposable in
             guard let requestURL = self.requestURL(uploadRequestParameters.route) else {
-                observer.onError(NetworkStackError.requestBuildFail)
+                observer.onError(SocializerError.requestBuildFail)
                 return Disposables.create()
             }
             
             guard let uploadManager = self.uploadManager else {
-                observer.onError(NetworkStackError.uploadManagerIsNotSet)
+                observer.onError(SocializerError.uploadManagerIsNotSet)
                 return Disposables.create()
             }
             
@@ -72,12 +72,12 @@ extension NetworkStack {
         return Observable.create({ [unowned self] (observer) -> Disposable in
             
             guard let requestURL = self.requestURL(uploadRequestParameters.route) else {
-                observer.onError(NetworkStackError.requestBuildFail)
+                observer.onError(SocializerError.requestBuildFail)
                 return Disposables.create()
             }
             
             guard let uploadManager = self.uploadManager else {
-                observer.onError(NetworkStackError.uploadManagerIsNotSet)
+                observer.onError(SocializerError.uploadManagerIsNotSet)
                 return Disposables.create()
             }
             
