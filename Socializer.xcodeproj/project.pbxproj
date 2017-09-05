@@ -123,11 +123,11 @@
 		CFB04B9C1F5E82350053D26B = {
 			isa = PBXGroup;
 			children = (
+				44DD6B7E9CBF7FE66AD3F7EA /* Frameworks */,
+				C80082748C61F4DE10764CB6 /* Pods */,
+				CFB04BA71F5E82350053D26B /* Products */,
 				CFB04BA81F5E82350053D26B /* Socializer */,
 				CFB04BB31F5E82350053D26B /* SocializerTests */,
-				CFB04BA71F5E82350053D26B /* Products */,
-				C80082748C61F4DE10764CB6 /* Pods */,
-				44DD6B7E9CBF7FE66AD3F7EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				CFB04BC01F5E825E0053D26B /* Source */,
-				CFB04BA91F5E82350053D26B /* Socializer.h */,
 				CFB04BAA1F5E82350053D26B /* Info.plist */,
+				CFB04BA91F5E82350053D26B /* Socializer.h */,
 			);
 			path = Socializer;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 		CFB04BB31F5E82350053D26B /* SocializerTests */ = {
 			isa = PBXGroup;
 			children = (
-				CFB04BB41F5E82350053D26B /* SocializerTests.swift */,
 				CFB04BB61F5E82350053D26B /* Info.plist */,
+				CFB04BB41F5E82350053D26B /* SocializerTests.swift */,
 			);
 			path = SocializerTests;
 			sourceTree = "<group>";
@@ -162,28 +162,38 @@
 		CFB04BC01F5E825E0053D26B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CFB04BE11F5E828E0053D26B /* JSONResponse.swift */,
-				CFB04BE31F5E82940053D26B /* OAuth.swift */,
-				CFB04BE51F5E829A0053D26B /* RetryManager.swift */,
-				CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */,
-				CFB04BE71F5E829F0053D26B /* UploadRequest.swift */,
-				CFB04BDD1F5E82830053D26B /* DataRequest.swift */,
-				CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */,
-				CFB04BD31F5E82760053D26B /* BaseRequestParameters.swift */,
-				CFB04BD41F5E82760053D26B /* RequestParameters.swift */,
-				CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */,
-				CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */,
-				CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */,
+				CFB04BE91F5E83F60053D26B /* Request Parameters */,
 				CFB04BC11F5E826C0053D26B /* AskCredentials.swift */,
+				CFB04BD31F5E82760053D26B /* BaseRequestParameters.swift */,
+				CFB04BDD1F5E82830053D26B /* DataRequest.swift */,
+				CFB04BDF1F5E828A0053D26B /* ErrorManager.swift */,
 				CFB04BC21F5E826C0053D26B /* Helpers.swift */,
+				CFB04BE11F5E828E0053D26B /* JSONResponse.swift */,
 				CFB04BC31F5E826C0053D26B /* KeychainService.swift */,
 				CFB04BC41F5E826C0053D26B /* MimeTypeHelper.swift */,
+				CFB04BDB1F5E827F0053D26B /* NetworkStack.swift */,
 				CFB04BC51F5E826C0053D26B /* NetworkStackDelegate.swift */,
 				CFB04BC61F5E826C0053D26B /* NetworkStackError.swift */,
+				CFB04BE31F5E82940053D26B /* OAuth.swift */,
 				CFB04BC71F5E826C0053D26B /* Reachability.swift */,
+				CFB04BD41F5E82760053D26B /* RequestParameters.swift */,
+				CFB04BE51F5E829A0053D26B /* RetryManager.swift */,
 				CFB04BC81F5E826C0053D26B /* Routable.swift */,
+				CFB04BD11F5E82700053D26B /* SessionManagerFactory.swift */,
+				CFB04BE71F5E829F0053D26B /* UploadRequest.swift */,
+				CFB04BD51F5E82760053D26B /* UploadRequestParameters.swift */,
+				CFB04BD61F5E82760053D26B /* UploadRequestParametersFile.swift */,
 			);
 			name = Source;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CFB04BE91F5E83F60053D26B /* Request Parameters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Request Parameters";
+			path = "Request Parameters";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,6 +642,7 @@
 				CFB04BBC1F5E82350053D26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFB04BBD1F5E82350053D26B /* Build configuration list for PBXNativeTarget "SocializerTests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +651,7 @@
 				CFB04BBF1F5E82350053D26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
