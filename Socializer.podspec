@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Socializer"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Reactive Networking framework"
 
   # This description is used to generate tags and improve search results.
@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
   # Dependencies 
-  s.dependency 'RxSwift'
+  s.dependency 'RxSwift', "~> 3.6"
   s.dependency 'Alamofire'
   s.dependency 'ObjectMapper'
   s.dependency 'KeychainAccess'
